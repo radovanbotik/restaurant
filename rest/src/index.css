@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Josefin+Sans:wght@300;400&family=Miniver&family=Open+Sans:wght@300;400;700&family=Quicksand:wght@300;400&family=Ranga&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Big+Shoulders+Text&family=Josefin+Sans:wght@300;400&family=Miniver&family=Open+Sans:wght@300;400;700&family=Quicksand:wght@300;400&family=Ranga&display=swap");
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -21,6 +20,7 @@
   --opensans: "Open Sans", sans-serif;
   --quicksand: "Quicksand", sans-serif;
   --ranga: "Ranga", cursive;
+  --bigshoulders: "Big Shoulders Text", cursive;
 }
 *,
 *::before,

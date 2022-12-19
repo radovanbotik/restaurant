@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { ButtonMoving } from "./ButtonMoving";
+import { Logo } from "./Logo";
 
 export const Footer = () => {
   return (
     <Wrapper>
       <div className="control">
         <div className="logo">
-          <img src="" alt="" />
+          <Logo />
         </div>
         <div className="address">
           <div>Laurent Restaurant & Fine dining, 71 Madison Ave</div>
@@ -32,6 +33,9 @@ const Wrapper = styled.footer`
     margin: 0 auto;
     padding-top: 130px;
     .logo {
+      display: grid;
+      place-content: center;
+      margin-bottom: 50px;
     }
     .address {
       text-align: center;

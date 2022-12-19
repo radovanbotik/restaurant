@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useState, useRef } from "react";
+import { LogoText } from "./LogoText";
 
 export const Navigation = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,9 +15,7 @@ export const Navigation = () => {
     <Wrapper>
       <div className="mobile-menu">
         <div className="control">
-          <span className="material-symbols-outlined icon logo">
-            restaurant_menu
-          </span>
+          <LogoText />
           <span className="material-symbols-outlined icon" onClick={revealMenu}>
             drag_handle
           </span>
@@ -85,6 +84,9 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .logo {
+      height: 50%;
+    }
     .icon {
       font-size: 3rem;
       cursor: pointer;
