@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Josefin+Sans:wght@300;400&family=Miniver&family=Open+Sans:wght@300;400;700&family=Quicksand:wght@300;400&family=Ranga&display=swap");
+
+:root {
+  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%; */
+  --badscript: "Bad Script", cursive;
+  --josefinsans: "Josefin Sans", sans-serif;
+  --miniver: "Miniver", cursive;
+  --opensans: "Open Sans", sans-serif;
+  --quicksand: "Quicksand", sans-serif;
+  --ranga: "Ranga", cursive;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+body {
+  font-family: var(--josefinsans);
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: var(--quicksand);
+  font-weight: 700;
+  text-transform: uppercase;
+  /* color: #c9ab81; */
+}
+h1,
+h6 {
+  letter-spacing: 0.22em;
+}
