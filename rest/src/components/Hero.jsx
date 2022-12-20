@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import mixing from "../assets/images/mixing.jpg";
-import pouring from "../assets/images/pouring.jpg";
+import pouring2 from "../assets/images/pouring2.jpg";
 import { ButtonMedium } from "./ButtonMedium";
 import styled, { keyframes } from "styled-components";
 import { useState } from "react";
@@ -15,7 +15,7 @@ const data = [
   },
   {
     id: 2,
-    img: pouring,
+    img: pouring2,
     title: "the finest drinks",
     phrase:
       "From the delicious food to wonderful cocktails, Laurent's offer is guaranteed to satisfy all of your taste buds.",
@@ -26,20 +26,20 @@ export const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slides, setSlides] = useState(data);
 
-  // const changeSlide = () => {
-  //   if (currentSlide < slides.length - 1) {
-  //     setCurrentSlide(prev => prev + 1);
-  //   } else {
-  //     setCurrentSlide(0);
-  //   }
-  // };
+  const changeSlide = () => {
+    if (currentSlide < slides.length - 1) {
+      setCurrentSlide(prev => prev + 1);
+    } else {
+      setCurrentSlide(0);
+    }
+  };
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     changeSlide();
-  //   }, 5000);
-  //   return () => clearTimeout(timer);
-  // }, [currentSlide]);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      changeSlide();
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, [currentSlide]);
   return (
     <Wrapper>
       <Slide key={slides[currentSlide].id} bg={slides[currentSlide].img}>

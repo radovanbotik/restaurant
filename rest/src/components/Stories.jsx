@@ -5,9 +5,9 @@ import interior1 from "../assets/images/interior1.jpg";
 import { Ornament3 } from "../assets/decorative/Ornament3";
 import { ParagraphDescription } from "./ParagraphDescription";
 
-export const Stories = () => {
+export const Stories = ({ setRef }) => {
   return (
-    <Wrapper>
+    <Wrapper ref={setRef}>
       <div className="control">
         <Headline headline={"about us"} tag={"Our Story"} />
         <ParagraphDescription
