@@ -11,22 +11,24 @@ import { appetizers } from "../../utility/Appetizers";
 export const MenuPage = () => {
   return (
     <Wrapper>
-      <h2 className="section-title">our menu</h2>
-      <MenuPageSpacerImage image={rolling} />
+      <div className="hero">
+        <h2 className="section-title">our menu</h2>
+        <MenuPageSpacerImage image={rolling} />
+      </div>
       <MenuPageSection
-        category={appetizers}
+        data={appetizers}
         tag={"Start slow"}
         headline={"appetizers"}
       />
       <MenuPageSpacerImage image={dough} />
       <MenuPageSection
-        category={appetizers}
+        data={appetizers}
         tag={"Tickle your senses"}
         headline={"main courses"}
       />
       <MenuPageSpacerImage image={pasta} />
       <MenuPageSection
-        category={appetizers}
+        data={appetizers}
         tag={"Treat yourself"}
         headline={"desserts"}
       />
@@ -41,7 +43,23 @@ const Wrapper = styled.section`
   position: relative;
   display: grid;
   place-content: center;
-  .section-title {
-    position: absolute;
+  .hero {
+    /* max-height: 600px;
+    overflow: hidden; */
+    width: 100%;
+    position: relative;
+    .section-title {
+      color: #c9ab81;
+      letter-spacing: 0.22em;
+      font-family: var(--metropolis);
+
+      position: absolute;
+      font-size: 41px;
+      line-height: 41px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      /* padding: 0 0.37em 0 0.52em; */
+    }
   }
 `;

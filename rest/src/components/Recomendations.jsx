@@ -28,6 +28,7 @@ const Wrapper = styled.section`
   background-color: #0b1315;
   min-height: 100vh;
   width: 100%;
+
   .control {
     padding: 80px 0;
     width: 420px;
@@ -36,7 +37,7 @@ const Wrapper = styled.section`
     text-align: center;
     .story-image {
       height: 600px;
-
+      margin-bottom: 80px;
       img {
         width: 100%;
         height: 100%;

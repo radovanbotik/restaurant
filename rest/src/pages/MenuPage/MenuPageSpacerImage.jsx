@@ -14,9 +14,10 @@ export const MenuPageSpacerImage = ({ image }) => {
 };
 
 const Wrapper = styled.div`
+  max-height: 600px;
+  overflow: hidden;
   background-color: #0f1d22;
   background-color: #0b1315;
-
   .control {
     /* width: 420px; */
     margin: 0 auto;

@@ -22,7 +22,7 @@ export const Headline = ({ headline, tag }) => {
 };
 
 const Wrapper = styled.div`
-  padding-top: 80px;
+  padding-top: 0px;
   display: grid;
   text-align: center;
   .story-header {

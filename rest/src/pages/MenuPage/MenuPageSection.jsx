@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { MenuList, Headline } from "../../components";
 
-export const MenuPageSection = ({ category, tag, headline }) => {
+export const MenuPageSection = ({ data, tag, headline }) => {
   return (
     <Wrapper className="section">
       <div className="control">
         <Headline tag={tag} headline={headline} />
-        <MenuList data={category} />
+        <MenuList data={data} />
       </div>
     </Wrapper>
   );
