@@ -17,6 +17,8 @@ import { Input } from "./Input";
 import { InputTextArea } from "./InputTextArea";
 import { SubmitButton } from "./SubmitButton";
 import { AnchorMoving } from "./AnchorMoving";
+import { ItemCard } from "./ItemCard";
+import { PersonCard } from "./PersonCard";
 
 export {
   AnchorMoving,
@@ -28,11 +30,13 @@ export {
   Headline,
   Input,
   InputTextArea,
+  ItemCard,
   Logo,
   Menu,
   MenuItem,
   MenuList,
   Navigation,
+  PersonCard,
   Recomendations,
   Stories,
   SubmitButton,

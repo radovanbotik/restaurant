@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { selected } from "../../utility/selectedDummy";
-import { ItemCard } from "../../components";
+import { personel } from "../../utility/personelDummy";
+import { PersonCard, Headline } from "../../components";
 
-export const SelectedPage = () => {
-  const [data, setData] = useState(selected);
-  console.log(data);
+export const KitchenPage = () => {
+  const [data, setData] = useState(personel);
 
   return (
     <Wrapper>
       <div className="control">
+        <Headline tag={"Meet"} headline={"the team"} />
         <div className="gallery">
           {data.map(entry => (
-            <ItemCard key={entry.id} {...entry} type={"product"} />
+            <PersonCard key={entry.id} {...entry} type={"product"} />
           ))}
         </div>
       </div>

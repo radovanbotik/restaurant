@@ -18,7 +18,7 @@ export const Recomendations = () => {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quae dolorem doloremque quasi vitae enim eos qui consectetur laudantium."
           }
         />
-        <ButtonMedium text={"view all"} />
+        <ButtonMedium text={"view all"} path={"/selected"} />
       </div>
     </Wrapper>
   );

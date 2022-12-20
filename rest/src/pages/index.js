@@ -1,6 +1,6 @@
 import { BookingPage } from "./BookingPage/BookingPage";
 import { FrontPage } from "./FrontPage";
-import { KitchenPage } from "./KitchenPage";
+import { KitchenPage } from "./KitchenPage/KitchenPage";
 import { MealPage } from "./MealPage";
 import { MenuPage } from "./MenuPage/MenuPage";
 import { RootLayout } from "./Rootlayout";
