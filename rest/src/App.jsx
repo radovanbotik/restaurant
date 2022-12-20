@@ -4,6 +4,7 @@ import {
   KitchenPage,
   MealPage,
   MenuPage,
+  SelectedPage,
   RootLayout,
 } from "./pages";
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
       <Route path="menu" element={<MenuPage />} />
       <Route path="booking" element={<BookingPage />} />
       <Route path="menu/:id" element={<MealPage />} />
+      <Route path="selected" element={<SelectedPage />} />
     </Route>
   )
 );

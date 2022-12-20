@@ -46,15 +46,14 @@ const Wrapper = styled.div`
       column-gap: 32px;
       grid-template-columns: min-content 1fr min-content;
       .vector {
-        height: 30px;
+        align-self: center;
+        height: 40px;
         width: 40px;
-        transform: translateY(8px);
-        /* display: grid;
-        place-items: center; */
       }
       .vector-left {
       }
       .vector-right {
+        transform: rotateY(180deg);
       }
       h2 {
         align-self: center;

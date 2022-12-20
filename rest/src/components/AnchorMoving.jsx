@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const ButtonMoving = ({ text, path }) => {
+export const AnchorMoving = ({ text, path }) => {
   return (
-    <Wrapper to={path} className="button">
+    <Wrapper href={path} target="_blank" className="button">
       <span className="text">{text}</span>
       <span className="line linetop"></span>
       <span className="line linebottom"></span>
@@ -12,7 +12,7 @@ export const ButtonMoving = ({ text, path }) => {
   );
 };
 
-const Wrapper = styled(Link)`
+const Wrapper = styled.a`
   display: inline-block;
   position: relative;
   vertical-align: middle;

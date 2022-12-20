@@ -6,7 +6,7 @@ export const MenuPageSpacerImage = ({ image }) => {
     <Wrapper className="image">
       <div className="control">
         <div className="image-control">
-          <img src={image} alt="" />
+          <img src={image} alt="" loading="lazy" />
         </div>
       </div>
     </Wrapper>

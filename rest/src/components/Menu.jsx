@@ -62,7 +62,7 @@ export const Menu = () => {
       <div className="control">
         <Headline headline={"from our menu"} tag={"Special selection"} />
         <MenuList data={data} />
-        <ButtonMedium text={"view all"} />
+        <ButtonMedium text={"view all"} path={"/menu"} />
       </div>
     </Wrapper>
   );
