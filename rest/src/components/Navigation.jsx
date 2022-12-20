@@ -17,6 +17,7 @@ export const Navigation = () => {
         <div className="control">
           <LogoText />
           <span className="material-symbols-outlined icon" onClick={revealMenu}>
+            {/* menu */}
             drag_handle
           </span>
         </div>
@@ -41,7 +42,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a href="/">
-                  <span className="text">Contact</span>
+                  <span className="text">Kitchen</span>
                   <span className="material-symbols-outlined icon">
                     keyboard_double_arrow_right
                   </span>
@@ -49,7 +50,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a href="/">
-                  <span className="text">Coworking</span>
+                  <span className="text">Booking</span>
                   <span className="material-symbols-outlined icon">
                     keyboard_double_arrow_right
                   </span>
@@ -88,7 +89,7 @@ const Wrapper = styled.div`
       height: 50%;
     }
     .icon {
-      font-size: 3rem;
+      font-size: 2rem;
       cursor: pointer;
     }
   }

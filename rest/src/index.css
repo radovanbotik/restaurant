@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Big+Shoulders+Text&family=Josefin+Sans:wght@300;400&family=Miniver&family=Open+Sans:wght@300;400;700&family=Quicksand:wght@300;400&family=Ranga&display=swap");
+@font-face {
+  font-family: "Akka";
+  src: url(./assets/fonts/akka.ttf);
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url(./assets/fonts/Metropolis1920.otf);
+}
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -21,6 +29,8 @@
   --quicksand: "Quicksand", sans-serif;
   --ranga: "Ranga", cursive;
   --bigshoulders: "Big Shoulders Text", cursive;
+  --akka: "Akka", serif;
+  --metropolis: "Metropolis", serif;
 }
 *,
 *::before,

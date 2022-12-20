@@ -98,7 +98,8 @@ const Slide = styled.div`
       /* display: flex;
       flex-wrap: wrap; */
       /* width: 156px; */
-      font-family: var(--bigshoulders);
+      /* font-family: var(--bigshoulders); */
+      font-family: var(--metropolis);
       line-height: 50px;
       letter-spacing: 12px;
       font-weight: 300px;
