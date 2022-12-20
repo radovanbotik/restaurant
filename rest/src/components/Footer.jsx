@@ -2,10 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { ButtonMoving } from "./ButtonMoving";
 import { Logo } from "./Logo";
+import { scrollToTop } from "../utility/scrollToTop";
 
 export const Footer = () => {
   return (
-    <Wrapper>
+    <Wrapper onClick={scrollToTop}>
       <div className="control">
         <div className="logo">
           <Logo />

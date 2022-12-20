@@ -9,6 +9,9 @@ import { Booking } from "./Booking";
 import { Footer } from "./Footer";
 import { FAB } from "./FAB";
 import { Logo } from "./Logo";
+import { MenuList } from "./MenuList";
+import { MenuItem } from "./MenuItem";
+import { Headline } from "./Headline";
 export {
   Hero,
   Navigation,
@@ -21,4 +24,7 @@ export {
   Footer,
   FAB,
   Logo,
+  MenuList,
+  MenuItem,
+  Headline,
 };

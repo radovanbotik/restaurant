@@ -4,7 +4,7 @@ import { Ornament3 } from "../assets/decorative/Ornament3";
 
 export const Headline = ({ headline, tag }) => {
   return (
-    <Wrapper>
+    <Wrapper className="headline">
       <header className="story-header">
         <span className="tag">{tag}</span>
         <div className="title-holder">
