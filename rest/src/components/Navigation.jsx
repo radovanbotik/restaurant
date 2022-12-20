@@ -28,7 +28,7 @@ export const Navigation = () => {
               <NavigationLink path="/" directory={"home"} />
               <NavigationLink path="/menu" directory={"menu"} />
               <NavigationLink path="/booking" directory={"booking"} />
-              <NavigationLink path="/kitchen" directory={"kitchen"} />
+              <NavigationLink path="/kitchen" directory={"team"} />
             </ul>
           </nav>
         </div>
