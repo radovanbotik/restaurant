@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Button = ({ text, path }) => {
+export const SubmitButton = ({ text, path }) => {
   return (
-    <Wrapper to={path} className="button">
+    <Wrapper type="submit" className="button">
       <span className="line lineleft"></span>
       <span className="text">{text}</span>
       <span className="line lineright"></span>
@@ -12,11 +11,11 @@ export const Button = ({ text, path }) => {
   );
 };
 
-const Wrapper = styled(Link)`
+const Wrapper = styled.button`
   display: inline-block;
   position: relative;
   vertical-align: middle;
-  padding: 11px 50px;
+  padding: 9px 39px;
   color: white;
   background-color: transparent;
   border: 1px solid #c9ab81;
@@ -25,6 +24,7 @@ const Wrapper = styled(Link)`
   z-index: 4;
   font-family: var(--opensans);
   font-size: 14px;
+  font-weight: 300;
   line-height: 2em;
   letter-spacing: 0.36em;
   text-transform: uppercase;
@@ -32,7 +32,8 @@ const Wrapper = styled(Link)`
   cursor: pointer;
   outline: none;
   text-decoration: none;
-  display: flex;
+
+  display: grid;
   place-content: center;
 
   .line {

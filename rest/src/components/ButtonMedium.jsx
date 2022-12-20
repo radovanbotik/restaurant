@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const ButtonMedium = ({ text }) => {
+export const ButtonMedium = ({ text, path }) => {
   return (
-    <Wrapper className="button">
+    <Wrapper to={path} className="button">
       <span className="line lineleft"></span>
       <span className="text">{text}</span>
       <span className="line lineright"></span>
@@ -12,7 +12,7 @@ export const ButtonMedium = ({ text }) => {
   );
 };
 
-const Wrapper = styled.a`
+const Wrapper = styled(Link)`
   display: inline-block;
   position: relative;
   vertical-align: middle;

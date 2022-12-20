@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonMoving } from "./ButtonMoving";
+import { AnchorMoving } from "./AnchorMoving";
 import { Logo } from "./Logo";
+import { scrollToTop } from "../utility/scrollToTop";
 
 export const Footer = () => {
   return (
-    <Wrapper>
+    <Wrapper onClick={scrollToTop}>
       <div className="control">
         <div className="logo">
           <Logo />
@@ -17,8 +18,14 @@ export const Footer = () => {
           <div>reservations@gourmandlounge.com</div>
         </div>
         <div className="socials">
-          <ButtonMoving text={"Instagram"} />
-          <ButtonMoving text={"Trip Advisor"} />
+          <AnchorMoving
+            text={"Instagram"}
+            path={"https://www.instagram.com/"}
+          />
+          <AnchorMoving
+            text={"Trip Advisor"}
+            path={"https://www.tripadvisor.com/"}
+          />
         </div>
       </div>
     </Wrapper>

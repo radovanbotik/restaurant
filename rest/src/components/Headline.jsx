@@ -4,7 +4,7 @@ import { Ornament3 } from "../assets/decorative/Ornament3";
 
 export const Headline = ({ headline, tag }) => {
   return (
-    <Wrapper>
+    <Wrapper className="headline">
       <header className="story-header">
         <span className="tag">{tag}</span>
         <div className="title-holder">
@@ -22,7 +22,7 @@ export const Headline = ({ headline, tag }) => {
 };
 
 const Wrapper = styled.div`
-  padding-top: 80px;
+  padding-top: 0px;
   display: grid;
   text-align: center;
   .story-header {
@@ -46,15 +46,14 @@ const Wrapper = styled.div`
       column-gap: 32px;
       grid-template-columns: min-content 1fr min-content;
       .vector {
-        height: 30px;
+        align-self: center;
+        height: 40px;
         width: 40px;
-        transform: translateY(8px);
-        /* display: grid;
-        place-items: center; */
       }
       .vector-left {
       }
       .vector-right {
+        transform: rotateY(180deg);
       }
       h2 {
         align-self: center;

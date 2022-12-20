@@ -31,6 +31,9 @@
   --bigshoulders: "Big Shoulders Text", cursive;
   --akka: "Akka", serif;
   --metropolis: "Metropolis", serif;
+
+  --blue-main: #0f1d22;
+  --black-main: #0b1315;
 }
 *,
 *::before,

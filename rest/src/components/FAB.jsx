@@ -1,11 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { scrollToTop } from "../utility/scrollToTop";
 
 export const FAB = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  };
-
   return (
     <Wrapper onClick={scrollToTop}>
       <div className="control">
@@ -26,6 +23,7 @@ const Wrapper = styled.div`
   height: 44px;
   border-radius: 50%;
   border: 1px solid #e7c595ba;
+  z-index: 100;
   /* border: 0;
   box-shadow: 0px 0px 2px 2px #e7c595; */
   margin: 2px;
