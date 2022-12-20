@@ -11,10 +11,10 @@ export const Footer = () => {
           <Logo />
         </div>
         <div className="address">
-          <div>Laurent Restaurant & Fine dining, 71 Madison Ave</div>
+          <div>The Gourmand Lounge, 71 Madison Ave</div>
           <div>10013 New York, 914-309-7030,</div>
           <div>Open: 09:00am - 01:00pm</div>
-          <div>reservations@laurent.com</div>
+          <div>reservations@gourmandlounge.com</div>
         </div>
         <div className="socials">
           <ButtonMoving text={"Instagram"} />
