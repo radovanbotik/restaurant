@@ -54,22 +54,15 @@ export const Hero = () => {
 };
 
 const Wrapper = styled.section`
-  /* height: 100vh; */
   min-height: 100vh;
   position: relative;
   display: grid;
   place-items: center;
 `;
-/*
-// const AnimateX = keyframes`
-//   0%{ background-position-x: 0px,}
-//   50%{ background-position-x: -2px}
-//   100%{ background-position-x: 0px}
-// `;
-*/
+
 const AnimateOpacity = keyframes`
   
-  0%{filter: grayscale(90%);}
+  0%{filter: grayscale(90%)}
   100%{filter: grayscale(10%)}
 `;
 
@@ -81,9 +74,6 @@ const Slide = styled.div`
   display: grid;
   place-content: center;
 
-  /* transition: all 500ms ease-in; */
-  /* background-position-y: 20px; */
-  animation: ${AnimateOpacity} 1500ms forwards ease-in-out;
   .headline {
     width: 100%;
     max-width: 300px;
@@ -95,10 +85,6 @@ const Slide = styled.div`
     transform: translateY(-72px);
 
     h2 {
-      /* display: flex;
-      flex-wrap: wrap; */
-      /* width: 156px; */
-      /* font-family: var(--bigshoulders); */
       font-family: var(--metropolis);
       line-height: 50px;
       letter-spacing: 12px;
@@ -115,8 +101,6 @@ const Slide = styled.div`
       font-weight: 300;
       font-size: 23px;
       margin-bottom: 32px;
-
-      /* width: 301px; */
     }
   }
   &:after {
@@ -130,6 +114,7 @@ const Slide = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(2px);
+    animation: ${AnimateOpacity} 1500ms forwards ease-in-out;
   }
   .button {
     justify-self: center;
