@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 export const Location = () => {
+  const API_KEY = import.meta.env.VITE_API_KEY;
   return (
     <Wrapper>
       <div className="control">
@@ -9,7 +10,7 @@ export const Location = () => {
           width="600"
           height="450"
           loading="lazy"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:Ei5Lb27FoXRhbnTDrW5hIMSMdWxlbmEsIDkxNyAwMSBUcm5hdmEsIFNsb3Zha2lhIi4qLAoUChIJQSXHkHhfa0cR-ykXfd0U3sQSFAoSCXklzwyAoGxHEYh4FojlmXkA&key=AIzaSyB3D8TTvHZPx8c4rn9uO7wiH1u7gGVT8SA"
+          src={`https://www.google.com/maps/embed/v1/place?q=place_id:Ei5Lb27FoXRhbnTDrW5hIMSMdWxlbmEsIDkxNyAwMSBUcm5hdmEsIFNsb3Zha2lhIi4qLAoUChIJQSXHkHhfa0cR-ykXfd0U3sQSFAoSCXklzwyAoGxHEYh4FojlmXkA&key=${API_KEY}`}
         ></iframe>
       </div>
     </Wrapper>
