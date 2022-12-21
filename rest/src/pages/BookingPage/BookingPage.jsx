@@ -47,7 +47,7 @@ export const BookingPage = () => {
         <Location />
         <div className="column">
           <div className="contact">
-            <Headline tag={"Write to us"} headline={"we are listening"} />
+            <Headline tag={"Let us know"} headline={"we are listening"} />
             <ContactForm />
           </div>
           <div className="address">

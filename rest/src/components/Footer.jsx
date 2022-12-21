@@ -12,8 +12,8 @@ export const Footer = () => {
           <Logo />
         </div>
         <div className="address">
-          <div>The Gourmand Lounge, 71 Madison Ave</div>
-          <div>10013 New York, 914-309-7030,</div>
+          <div>The Gourmand Lounge</div>
+          <div>Štefánikova 20 Trnava, 91701,</div>
           <div>Open: 09:00am - 01:00pm</div>
           <div>reservations@gourmandlounge.com</div>
         </div>
