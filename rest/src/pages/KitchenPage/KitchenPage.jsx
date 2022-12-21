@@ -34,6 +34,9 @@ const Wrapper = styled.section`
     display: grid;
     justify-items: center;
     gap: 1em;
+    .headline {
+      padding: 80px 0;
+    }
     .gallery {
       display: grid;
       grid-template-columns: 1fr;

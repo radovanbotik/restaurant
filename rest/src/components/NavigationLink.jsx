@@ -2,14 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const NavigationLink = ({ path, directory }) => {
+export const NavigationLink = ({ path, directory, type }) => {
   return (
     <Wrapper>
       <Link to={path}>
         <span className="text">{directory}</span>
-        <span className="material-symbols-outlined icon">
-          keyboard_double_arrow_right
-        </span>
+        {type === "mobile" && (
+          <span className="material-symbols-outlined icon">
+            keyboard_double_arrow_right
+          </span>
+        )}
       </Link>
     </Wrapper>
   );
