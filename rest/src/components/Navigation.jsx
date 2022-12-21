@@ -70,7 +70,7 @@ const Wrapper = styled.div`
   .dropdown {
     height: 0px;
     background-color: #0f1d22;
-    border-bottom: 1px solid #715b3e;
+    border-bottom: 1px solid var(--gold-dark);
     transition: height 400ms ease;
   }
   .dropdown.active {

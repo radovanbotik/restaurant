@@ -17,7 +17,8 @@ export const MenuList = ({ data }) => {
 const Wrapper = styled.div`
   width: 100%;
   display: grid;
-  place-content: center;
+  /* place-content: center; */
+  justify-content: center;
   .control {
     display: grid;
     /* justify-content: center; */
