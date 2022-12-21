@@ -21,7 +21,8 @@ const Wrapper = styled.div`
   justify-content: center;
   .control {
     display: grid;
-    /* justify-content: center; */
+    max-width: 1600px;
+    padding: 80px;
     justify-items: flex-start;
     column-gap: var(--vspace-0);
 
@@ -31,6 +32,7 @@ const Wrapper = styled.div`
     .control {
       grid-template-rows: repeat(4, 1fr);
       grid-template-columns: 1fr 1fr;
+      /* grid-template-columns: minmax(200px, 600px) minmax(200px, 600px); */
     }
   }
 `;

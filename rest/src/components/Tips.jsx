@@ -16,13 +16,15 @@ export const Tips = () => {
         <div className="img-control">
           <img src={femaledecorating2} alt="" />
         </div>
-        <Headline tag={"Our Philosophy"} headline={"our tips"} />
-        <ParagraphDescription
-          description={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quasipossimus laborum architecto soluta quos. Repudiandae reiciendis suscipit fugit voluptas praesentium perferendis magnam quibusdam quae?"
-          }
-        />
-        <ButtonMoving text={"read more"} />
+        <div className="writeup">
+          <Headline tag={"Our Philosophy"} headline={"our tips"} />
+          <ParagraphDescription
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quasipossimus laborum architecto soluta quos. Repudiandae reiciendis suscipit fugit voluptas praesentium perferendis magnam quibusdam quae?"
+            }
+          />
+          <ButtonMoving text={"read more"} />
+        </div>
       </div>
     </Wrapper>
   );
@@ -33,10 +35,8 @@ const Wrapper = styled.section`
   .control {
     padding: 80px 0;
     margin: 0 auto;
-    width: 420px;
     display: grid;
     justify-items: center;
-    /* gap: 50px; */
     .img-control {
       height: 600px;
       padding-bottom: 50px;
@@ -45,6 +45,29 @@ const Wrapper = styled.section`
         height: 100%;
         object-fit: cover;
       }
+    }
+    .writeup {
+      display: grid;
+      place-content: center;
+      .button {
+        align-self: center;
+        justify-self: center;
+      }
+    }
+  }
+  @media (min-width: 1000px) {
+    .control {
+      display: grid;
+      grid-template-columns: minmax(150px, 350px) minmax(150px, 350px) minmax(
+          200px,
+          400px
+        );
+      justify-content: space-evenly;
+      padding: 80px 40px;
+    }
+    .story-image {
+    }
+    .writeup {
     }
   }
 `;

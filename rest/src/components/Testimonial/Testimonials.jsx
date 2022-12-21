@@ -84,16 +84,18 @@ export const Testimonials = () => {
 
 const Wrapper = styled.section`
   background-color: #0f1d22;
+  padding: 80px 0px;
 
   .control {
     margin: 0 auto;
     display: grid;
     justify-content: center;
     align-items: center;
+    gap: var(--vspace-0);
     .testimonial-control {
       display: grid;
       place-content: center;
-      padding: 80px 20px;
+      padding: 20px;
       .vector-quotemark {
         justify-self: center;
         height: 33px;
@@ -110,6 +112,9 @@ const Wrapper = styled.section`
       }
     }
     .image-control {
+      max-height: 600px;
+      /* height: 600px; */
+      width: 100%;
       img {
         width: 100%;
         height: 100%;
@@ -118,9 +123,12 @@ const Wrapper = styled.section`
       }
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     .control {
       grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(200px, 600px) minmax(150px, 600px);
+      justify-content: space-evenly;
+      padding: 40px;
     }
   }
 `;

@@ -71,7 +71,7 @@ const Wrapper = styled.div`
     }
     @media (min-width: 1200px) {
       display: grid;
-      grid-template-columns: max-content 1fr max-content;
+      grid-template-columns: minmax(200px, 1fr) 1fr max-content;
       grid-template-areas:
         "name line price"
         "ingredients ingredients ingredients";

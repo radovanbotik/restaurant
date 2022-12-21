@@ -36,10 +36,10 @@ const Wrapper = styled.section`
     gap: var(--vspace-0);
     text-align: center;
     .story-image {
-      max-height: 500px;
-      /* max-width: 600px; */
+      /* max-height: 500px; */
+      height: 600px;
+
       width: 100%;
-      /* height: 100%; */
       img {
         width: 100%;
         height: 100%;
@@ -48,7 +48,6 @@ const Wrapper = styled.section`
       }
     }
     .writeup {
-      /* max-width: 600px; */
       display: grid;
       place-content: center;
       .button {
@@ -60,10 +59,9 @@ const Wrapper = styled.section`
   @media (min-width: 1000px) {
     .control {
       display: grid;
-      grid-template-columns: minmax(200px, 600px) minmax(200px, 600px);
+      grid-template-columns: minmax(150px, 600px) minmax(200px, 600px);
       justify-content: space-evenly;
-
-      padding: 80px;
+      padding: 40px;
     }
     .story-image {
     }
