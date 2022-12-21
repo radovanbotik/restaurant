@@ -16,10 +16,10 @@ export const Booking = () => {
 
 const Wrapper = styled.section`
   background-color: #0f1d22;
+  padding: 160px 0;
   .control {
-    padding: 80px 0;
-    width: 420px;
     margin: 0 auto;
-    padding-top: 130px;
+    display: grid;
+    justify-content: center;
   }
 `;

@@ -22,7 +22,7 @@ export const Headline = ({ headline, tag }) => {
 };
 
 const Wrapper = styled.div`
-  padding: 60px 0;
+  /* padding: 60px 0; */
   /* padding-top: 0px; */
   display: grid;
   text-align: center;

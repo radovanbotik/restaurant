@@ -32,6 +32,7 @@ export const Tips = () => {
 
 const Wrapper = styled.section`
   background-color: black;
+  padding: 0px 40px;
   .control {
     padding: 80px 0;
     margin: 0 auto;

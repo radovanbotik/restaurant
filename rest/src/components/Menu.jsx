@@ -19,7 +19,9 @@ export const Menu = () => {
 
 const Wrapper = styled.section`
   background-color: #0f1d22;
+  padding: 0px 40px;
   .control {
+    padding: 80px 0;
     margin: 0 auto;
     padding: 80px 0;
     display: grid;

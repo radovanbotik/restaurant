@@ -29,8 +29,9 @@ export const Recomendations = () => {
 const Wrapper = styled.section`
   background-color: #0b1315;
   width: 100%;
-  padding: 80px 0;
+  padding: 0px 40px;
   .control {
+    padding: 80px 0;
     margin: 0 auto;
     display: grid;
     gap: var(--vspace-0);
@@ -61,7 +62,7 @@ const Wrapper = styled.section`
       display: grid;
       grid-template-columns: minmax(150px, 600px) minmax(200px, 600px);
       justify-content: space-evenly;
-      padding: 40px;
+      padding: 0px 40px;
     }
     .story-image {
     }

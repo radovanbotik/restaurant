@@ -84,9 +84,9 @@ export const Testimonials = () => {
 
 const Wrapper = styled.section`
   background-color: #0f1d22;
-  padding: 80px 0px;
-
+  padding: 0px 40px;
   .control {
+    padding: 80px 0;
     margin: 0 auto;
     display: grid;
     justify-content: center;

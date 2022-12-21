@@ -67,7 +67,7 @@ h6 {
 }
 
 html {
-  font-size: 14px;
+  /* font-size: 12px; */
 }
 
 body {
@@ -161,6 +161,7 @@ h5 {
 
 h6 {
   font-size: 1.1875em;
+  font-size: 0.8958rem;
   font-weight: 700;
   line-height: calc(3.9167 / var(--space) * var(--vspace-3));
   color: var(--gold-main);

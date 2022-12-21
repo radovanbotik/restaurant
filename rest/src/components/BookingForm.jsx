@@ -7,24 +7,32 @@ import { ButtonMedium } from "./ButtonMedium";
 export const BookingForm = () => {
   return (
     <Wrapper>
-      <SelectInput />
-      <SelectInput />
-      <DateInput />
-      <ButtonMedium text={"book now"} />
+      <div className="control ">
+        <SelectInput />
+        <SelectInput />
+        <DateInput />
+        <ButtonMedium text={"book now"} />
+      </div>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.form`
-  display: grid;
-  gap: 32px;
-  /* grid-template-areas:
-    "guests date"
-    "time button"; */
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
-  justify-content: center;
-  .button {
-    padding: 0;
+  .control {
+    width: 100%;
+    display: grid;
+    gap: var(--vspace-2);
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    .button {
+      padding: 0;
+    }
+  }
+  @media (min-width: 1000px) {
+    .control {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      /* grid-template-columns: minmax(200px, 600px) minmax(200px, 600px); */
+    }
   }
 `;

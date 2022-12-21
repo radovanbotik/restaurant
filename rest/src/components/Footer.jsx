@@ -34,6 +34,7 @@ export const Footer = () => {
 
 const Wrapper = styled.footer`
   background-color: #0b1315;
+  padding: 0px 40px;
   .control {
     padding: 80px 0;
     /* width: 420px; */
