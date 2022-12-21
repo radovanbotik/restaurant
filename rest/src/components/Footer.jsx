@@ -1,32 +1,30 @@
 import React from "react";
 import styled from "styled-components";
 import { AnchorMoving } from "./AnchorMoving";
+import { Address } from "./Address";
 import { Logo } from "./Logo";
 import { scrollToTop } from "../utility/scrollToTop";
+import { Socials } from "./Socials";
 
 export const Footer = () => {
+  const socialsData = [
+    {
+      platform: "Instagram",
+      path: "https://www.instagram.com/",
+    },
+    {
+      platform: "Trip Advisor",
+      path: "https://www.tripadvisor.com/",
+    },
+  ];
   return (
     <Wrapper onClick={scrollToTop}>
       <div className="control">
         <div className="logo">
           <Logo />
         </div>
-        <div className="address">
-          <div>The Gourmand Lounge</div>
-          <div>Štefánikova 20 Trnava, 91701,</div>
-          <div>Open: 09:00am - 01:00pm</div>
-          <div>reservations@gourmandlounge.com</div>
-        </div>
-        <div className="socials">
-          <AnchorMoving
-            text={"Instagram"}
-            path={"https://www.instagram.com/"}
-          />
-          <AnchorMoving
-            text={"Trip Advisor"}
-            path={"https://www.tripadvisor.com/"}
-          />
-        </div>
+        <Address />
+        <Socials socials={socialsData} />
       </div>
     </Wrapper>
   );
@@ -45,16 +43,6 @@ const Wrapper = styled.footer`
       display: grid;
       place-content: center;
       margin-bottom: 50px;
-    }
-    .address {
-      text-align: center;
-      text-decoration: none;
-      text-transform: none;
-      text-emphasis: none;
-      div {
-        line-height: 14px;
-        margin: 0 0 25px;
-      }
     }
     .socials {
       display: flex;

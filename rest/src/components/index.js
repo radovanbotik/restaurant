@@ -19,8 +19,10 @@ import { SubmitButton } from "./SubmitButton";
 import { AnchorMoving } from "./AnchorMoving";
 import { ItemCard } from "./ItemCard";
 import { PersonCard } from "./PersonCard";
+import { Address } from "./Address";
 
 export {
+  Address,
   AnchorMoving,
   Booking,
   Button,

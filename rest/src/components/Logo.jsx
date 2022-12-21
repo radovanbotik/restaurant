@@ -12,7 +12,7 @@ export const Logo = () => {
 };
 
 const Wrapper = styled(Link)`
-  height: 100%;
+  /* height: 100%; */
   max-width: 150px;
   cursor: pointer;
   img {

@@ -88,23 +88,4 @@ const Wrapper = styled.div`
   .dropdown.active {
     height: 200px;
   }
-
-  /* @media (min-width: 1000px) {
-    top: 0;
-    width: 100%;
-    position: absolute;
-    z-index: 100;
-    flex-direction: row;
-    .mobile-menu {
-      background-color: transparent;
-    }
-    .control {
-      .icon {
-        display: none;
-      }
-    }
-    .dropdown {
-      display: none;
-    }
-  } */
 `;
