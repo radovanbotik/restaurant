@@ -74,9 +74,9 @@ export const Testimonials = () => {
             </div>
           </div>
         </div>
-      </div>{" "}
-      <div className="image-control">
-        <img src={takingorders} alt="" />
+        <div className="image-control">
+          <img src={takingorders} alt="" />
+        </div>
       </div>
     </Wrapper>
   );
@@ -86,14 +86,14 @@ const Wrapper = styled.section`
   background-color: #0f1d22;
 
   .control {
-    padding: 80px 0;
-    width: 420px;
     margin: 0 auto;
-    padding-top: 130px;
     display: grid;
+    justify-content: center;
+    align-items: center;
     .testimonial-control {
       display: grid;
-      /* place-content: center; */
+      place-content: center;
+      padding: 80px 20px;
       .vector-quotemark {
         justify-self: center;
         height: 33px;
@@ -104,20 +104,23 @@ const Wrapper = styled.section`
         overflow: hidden;
         position: relative;
         width: 100%;
-        height: 400px;
       }
       .navigation {
         margin: 46px 0 0;
       }
     }
+    .image-control {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
   }
-  .image-control {
-    /* min-height: 70vh; */
-    height: 600px;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+  @media (min-width: 768px) {
+    .control {
+      grid-template-columns: 1fr 1fr;
     }
   }
 `;

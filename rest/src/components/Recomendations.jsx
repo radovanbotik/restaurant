@@ -12,13 +12,15 @@ export const Recomendations = () => {
         <div className="story-image">
           <img src={decorating} alt="" />
         </div>
-        <Headline headline={"our best specialties"} tag={"Recommendations"} />
-        <ParagraphDescription
-          description={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quae dolorem doloremque quasi vitae enim eos qui consectetur laudantium."
-          }
-        />
-        <ButtonMedium text={"view all"} path={"/selected"} />
+        <div className="writeup">
+          <Headline headline={"our best specialties"} tag={"Recommendations"} />
+          <ParagraphDescription
+            description={
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quae dolorem doloremque quasi vitae enim eos qui consectetur laudantium."
+            }
+          />
+          <ButtonMedium text={"view all"} path={"/selected"} />
+        </div>
       </div>
     </Wrapper>
   );
@@ -26,28 +28,46 @@ export const Recomendations = () => {
 
 const Wrapper = styled.section`
   background-color: #0b1315;
-  min-height: 100vh;
   width: 100%;
-
+  padding: 80px 0;
   .control {
-    padding: 80px 0;
-    width: 420px;
     margin: 0 auto;
     display: grid;
+    gap: var(--vspace-0);
     text-align: center;
     .story-image {
-      height: 600px;
-      margin-bottom: 80px;
+      max-height: 500px;
+      /* max-width: 600px; */
+      width: 100%;
+      /* height: 100%; */
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: block;
       }
     }
+    .writeup {
+      /* max-width: 600px; */
+      display: grid;
+      place-content: center;
+      .button {
+        align-self: center;
+        justify-self: center;
+      }
+    }
+  }
+  @media (min-width: 1000px) {
+    .control {
+      display: grid;
+      grid-template-columns: minmax(200px, 600px) minmax(200px, 600px);
+      justify-content: space-evenly;
 
-    .button {
-      align-self: center;
-      justify-self: center;
+      padding: 80px;
+    }
+    .story-image {
+    }
+    .writeup {
     }
   }
 `;
