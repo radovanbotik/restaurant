@@ -36,7 +36,8 @@ const Wrapper = styled.footer`
   background-color: #0b1315;
   .control {
     padding: 80px 0;
-    width: 420px;
+    /* width: 420px; */
+    max-width: 768px;
     margin: 0 auto;
     padding-top: 130px;
     .logo {
@@ -56,7 +57,9 @@ const Wrapper = styled.footer`
     }
     .socials {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
+      /* justify-content: center; */
       align-items: center;
       padding: 40px;
     }

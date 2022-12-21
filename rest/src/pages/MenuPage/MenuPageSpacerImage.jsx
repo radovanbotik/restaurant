@@ -23,9 +23,9 @@ const Wrapper = styled.div`
     margin: 0 auto;
     padding: 80px 0;
     /* padding-top: 130px; */
-    display: grid;
-    justify-items: center;
-    gap: 1em;
+    /* display: grid; */
+    /* justify-items: center; */
+    /* gap: 1em; */
     .image-control {
       img {
         width: 100%;

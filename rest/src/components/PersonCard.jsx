@@ -7,7 +7,7 @@ export const PersonCard = ({ id, name, occupation, contact, image }) => {
     <Wrapper>
       <Inner bg={image}>
         <div className="details">
-          <h2 className="person">{name}</h2>{" "}
+          <h1 className="person">{name}</h1>
           <div className="contact">
             {Object.entries(contact).map((array, index) => {
               const [text, path] = array;
@@ -17,7 +17,7 @@ export const PersonCard = ({ id, name, occupation, contact, image }) => {
         </div>
       </Inner>
       <div className="details">
-        <h5>{name}</h5>
+        <h5 className="footnote_ts">{name}</h5>
         <p>{occupation}</p>
       </div>
     </Wrapper>
@@ -28,38 +28,18 @@ const Wrapper = styled.div`
   padding: 15px;
   height: 600px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  max-width: 420px;
   gap: 20px;
-
-  h5 {
-    font-family: var(--quicksand);
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #c9ab81;
-    font-size: 16px;
-    line-height: 25px;
-    /* margin: 0 0 7px; */
-    text-align: center;
-    margin-bottom: 7px;
-  }
-  p {
-    font-family: var(--josefinsans);
-    font-weight: 300;
-    text-transform: capitalize;
-    font-size: 16px;
-    line-height: 29px;
-    /* margin: 0 0 20px; */
-    text-align: center;
-  }
+  text-align: center;
 `;
 
 const Inner = styled.div`
   height: 100%;
+  width: 100%;
   position: relative;
-  /* background-image: url(${props => props.bg});
-  background-size: cover;
-  background-position: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   :before {
     content: "";
@@ -85,24 +65,17 @@ const Inner = styled.div`
     height: 100%;
     width: 100%;
     background-color: #0f1d227e;
-    display: grid;
     gap: 28px;
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
-    /* place-content: center; */
     justify-content: center;
+    align-items: center;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: 450ms ease-in-out;
     .person {
-      font-size: 40px;
+      align-self: center;
       line-height: 1;
-      letter-spacing: 0.22em;
-      font-family: var(--metropolis);
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #c9ab81;
-      text-align: center;
+      font-size: 2.375em;
     }
     .contact {
       display: flex;

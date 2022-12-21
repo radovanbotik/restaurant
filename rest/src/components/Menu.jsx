@@ -71,7 +71,7 @@ export const Menu = () => {
 const Wrapper = styled.section`
   background-color: #0f1d22;
   .control {
-    width: 420px;
+    /* width: 420px; */
     margin: 0 auto;
     padding: 80px 0;
     /* padding-top: 130px; */

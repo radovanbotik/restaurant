@@ -18,12 +18,29 @@ export const ItemCard = ({ id, category, image, type }) => {
 
 const Wrapper = styled.div`
   height: 600px;
+  max-width: 420px;
+  min-width: 320px;
   width: 100%;
-  background-image: url(${props => props.bg});
-  background-size: cover;
-  background-position: center;
   padding: 15px;
+  position: relative;
   cursor: pointer;
+  :before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url(${props => props.bg});
+    transition: 450ms ease-in-out;
+  }
+  &:hover {
+    &:before {
+      filter: blur(1px);
+    }
+  }
   &:hover {
     .details {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -48,13 +65,7 @@ const Wrapper = styled.div`
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: 450ms ease-in-out;
     .category {
-      font-size: 40px;
-      line-height: 22px;
-      letter-spacing: 0.22em;
       font-family: var(--metropolis);
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #c9ab81;
     }
     .graphic-control {
       position: relative;

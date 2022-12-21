@@ -39,6 +39,7 @@ const Wrapper = styled.div`
     border: none;
     line-height: 24px;
     border-radius: none;
+    resize: none;
   }
   /* option {
     background-color: transparent;

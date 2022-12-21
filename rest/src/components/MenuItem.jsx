@@ -6,7 +6,7 @@ export const MenuItem = ({ id, dish, price, ingredients }) => {
   return (
     <Wrapper>
       <h6 className="item-name">{dish}</h6>
-      <span className="item-price">{formatPrice(price / 100)}</span>
+      <h6 className="item-price">{formatPrice(price / 100)}</h6>
       <p className="item-ingredients">{ingredients}</p>
     </Wrapper>
   );
@@ -14,21 +14,14 @@ export const MenuItem = ({ id, dish, price, ingredients }) => {
 
 const Wrapper = styled.div`
   margin-bottom: 37px;
+  display: flex;
+  flex-direction: column;
   .item-name {
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.22em;
-    font-family: var(--quicksand);
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #c9ab81;
   }
   .item-price {
     display: inline-block;
     margin: 2px 0 7px;
     white-space: normal;
-    font-family: var(--quicksand);
-    font-weight: 700;
     color: #c9ab81;
     word-wrap: break-word;
     line-height: 1.52em;

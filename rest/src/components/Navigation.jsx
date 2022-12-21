@@ -51,7 +51,7 @@ const Wrapper = styled.div`
   .control {
     /* height: 100%; */
     height: 70px;
-    width: 420px;
+    max-width: 768px;
     margin: 0 auto;
     color: #c9ab81;
 
@@ -77,7 +77,9 @@ const Wrapper = styled.div`
     height: 200px;
   }
   nav {
-    width: 420px;
+    /* width: 420px; */
+    max-width: 768px;
+
     padding: 20px 0;
     margin: 0 auto;
     ul {

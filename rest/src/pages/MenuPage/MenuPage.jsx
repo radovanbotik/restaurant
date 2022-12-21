@@ -12,7 +12,7 @@ export const MenuPage = () => {
   return (
     <Wrapper>
       <div className="hero">
-        <h2 className="section-title">our menu</h2>
+        <h1 className="section-title">our menu</h1>
         <MenuPageSpacerImage image={rolling} />
       </div>
       <MenuPageSection
@@ -49,17 +49,11 @@ const Wrapper = styled.section`
     width: 100%;
     position: relative;
     .section-title {
-      color: #c9ab81;
-      letter-spacing: 0.22em;
-      font-family: var(--metropolis);
-
       position: absolute;
-      font-size: 41px;
-      line-height: 41px;
+      width: 80%;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      /* padding: 0 0.37em 0 0.52em; */
     }
   }
 `;
