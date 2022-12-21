@@ -4,10 +4,12 @@ import styled from "styled-components";
 import decorating from "../assets/images/decorating.jpg";
 import { ButtonMedium } from "./ButtonMedium";
 import { ParagraphDescription } from "./ParagraphDescription";
+import { GridLines } from "./GridLines";
 
 export const Recomendations = () => {
   return (
     <Wrapper>
+      <GridLines />
       <div className="control">
         <div className="story-image">
           <img src={decorating} alt="" />
@@ -29,13 +31,16 @@ export const Recomendations = () => {
 const Wrapper = styled.section`
   background-color: #0b1315;
   width: 100%;
-  padding: 0px 40px;
+  /* padding: 40px 40px; */
+  position: relative;
+
   .control {
-    padding: 80px 0;
+    padding: 80px 40px;
     margin: 0 auto;
     display: grid;
     gap: var(--vspace-0);
     text-align: center;
+    position: relative;
     .story-image {
       /* max-height: 500px; */
       height: 600px;

@@ -5,10 +5,12 @@ import { ParagraphDescription } from "./ParagraphDescription";
 import { ButtonMoving } from "./ButtonMoving";
 import femaledecorating from "../assets/images/femaledecorating.jpg";
 import femaledecorating2 from "../assets/images/femaledecorating2.jpg";
+import { GridLines } from "./GridLines";
 
 export const Tips = () => {
   return (
     <Wrapper>
+      {/* <GridLines /> */}
       <div className="control">
         <div className="img-control">
           <img src={femaledecorating} alt="" />
@@ -32,9 +34,9 @@ export const Tips = () => {
 
 const Wrapper = styled.section`
   background-color: black;
-  padding: 0px 40px;
+  /* padding: 0px 40px; */
   .control {
-    padding: 80px 0;
+    padding: 80px 40px;
     margin: 0 auto;
     display: grid;
     justify-items: center;
