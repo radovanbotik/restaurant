@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { AnchorMoving } from "./AnchorMoving";
 
 export const Socials = ({ socials }) => {
-  console.log(socials);
   return (
     <Wrapper>
       {socials.map(({ platform, path }) => (

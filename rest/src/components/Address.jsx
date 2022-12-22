@@ -6,7 +6,7 @@ export const Address = () => {
     <Wrapper>
       <div>The Gourmand Lounge</div>
       <div>Štefánikova 20 Trnava, 91701,</div>
-      <div>Open: 09:00am - 01:00pm</div>
+      <div>Open: 11:00am - 01:00pm</div>
       <div>reservations@gourmandlounge.com</div>
     </Wrapper>
   );

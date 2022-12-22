@@ -2,6 +2,8 @@ import React from "react";
 import { Headline } from "./Headline";
 import styled from "styled-components";
 import interior1 from "../assets/images/interior1.jpg";
+import interior2 from "../assets/images/interior2.jpg";
+
 import { Ornament3 } from "../assets/decorative/Ornament3";
 import { ParagraphDescription } from "./ParagraphDescription";
 
@@ -21,7 +23,7 @@ export const Stories = ({ setRef }) => {
           />
         </div>
         <div className="story-image">
-          <img src={interior1} alt="" />
+          <img src={interior2} alt="" />
         </div>
       </div>
     </Wrapper>
