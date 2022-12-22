@@ -14,6 +14,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import { ErrorPage } from "./pages/ErrorPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path="booking" element={<BookingPage />} />
       <Route path="menu/:id" element={<MealPage />} />
       <Route path="selected" element={<SelectedPage />} />
+      <Route path="*" element={<ErrorPage />} />
     </Route>
   )
 );
