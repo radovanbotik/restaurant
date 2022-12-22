@@ -22,23 +22,19 @@ const socialsData = [
 export const NavigationDesktop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const getScrollY = () => {
-    window.addEventListener("scroll", e => {
-      setScrollY(window.scrollY);
-    });
-  };
-  const [scrollY, setScrollY] = useState(getScrollY());
-
   const revealCard = () => {
     setIsVisible(false);
   };
   const foldCard = () => {
     setIsVisible(true);
   };
-
-  useEffect(() => {
-    if (scrollY > 100) foldCard();
-  }, [scrollY]);
+  const getScrollY = () => {
+    window.addEventListener("scroll", e => {
+      // setScrollY(window.scrollY);
+      if (window.scrollY > 100) foldCard();
+    });
+  };
+  getScrollY();
   return (
     <Wrapper>
       <div className="control">
