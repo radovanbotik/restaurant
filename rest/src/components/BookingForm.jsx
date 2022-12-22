@@ -47,7 +47,8 @@ const Wrapper = styled.form`
     width: 100%;
     display: grid;
     gap: var(--vspace-2);
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     align-content: center;
     justify-content: center;
     .button {

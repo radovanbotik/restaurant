@@ -49,7 +49,8 @@ const Wrapper = styled.div`
   place-content: center;
   .modal-body {
     position: relative;
-    width: 400px;
+    width: 100%;
+    max-width: 500px;
     background-color: var(--blue-main);
     border: 1px solid var(--gold-main);
     padding: 20px;

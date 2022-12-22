@@ -18,6 +18,7 @@ const Wrapper = styled.section`
   background-color: #0f1d22;
   padding: 160px 0;
   .control {
+    padding: 20px;
     margin: 0 auto;
     display: grid;
     justify-content: center;
