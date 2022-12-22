@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import { useGlobalBooking } from "../context/BookingContext";
 import {
   Hero,
   Stories,
@@ -8,10 +9,11 @@ import {
   Menu,
   Tips,
   Booking,
-  FAB,
+  Modal,
 } from "../components";
 
 export const FrontPage = () => {
+  const { modalState } = useGlobalBooking();
   return (
     <Wrapper>
       <Hero />
@@ -21,8 +23,11 @@ export const FrontPage = () => {
       <Menu />
       <Tips />
       <Booking />
+      {modalState && <Modal />}
     </Wrapper>
   );
 };
 
-const Wrapper = styled.section``;
+const Wrapper = styled.section`
+  position: relative;
+`;

@@ -47,6 +47,7 @@ const Wrapper = styled.div`
   select {
     appearance: none;
     padding: 0em 1em;
+    font-family: var(--opensans);
 
     width: 100%;
     height: 100%;

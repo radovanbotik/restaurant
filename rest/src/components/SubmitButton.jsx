@@ -23,6 +23,7 @@ const Wrapper = styled.button`
 
   z-index: 4;
   font-family: var(--opensans);
+
   font-size: 14px;
   font-weight: 300;
   line-height: 2em;

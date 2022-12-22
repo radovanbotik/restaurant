@@ -37,6 +37,7 @@ const Wrapper = styled.div`
     appearance: none;
     -webkit-appearance: none;
     padding: 0em 1em;
+    font-family: var(--opensans);
 
     width: 100%;
     height: 100%;

@@ -4,6 +4,8 @@ import { getCurrentDay } from "../utility/getCurrentDate";
 
 const BookingCTX = React.createContext();
 const BookingContext = ({ children }) => {
+  const [modalState, setModalState] = useState(false);
+
   const [userInput, setUserInput] = useState({
     people: 1,
     hours: "12:00",
@@ -15,13 +17,19 @@ const BookingContext = ({ children }) => {
     setUserInput(prev => ({ ...prev, [name]: value }));
   };
 
+  const closeModal = () => {
+    setModalState(false);
+  };
+
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(userInput);
+    setModalState(true);
   };
 
   return (
-    <BookingCTX.Provider value={{ handleChange, handleSubmit, userInput }}>
+    <BookingCTX.Provider
+      value={{ handleChange, handleSubmit, userInput, modalState, closeModal }}
+    >
       {children}
     </BookingCTX.Provider>
   );

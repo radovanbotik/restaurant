@@ -10,35 +10,44 @@ export const InputTextArea = ({ name }) => {
       <textarea
         name={name}
         value={userInput[name]}
-        onChange={e =>
-          handleChange({ target: e.target.name, value: e.target.value })
-        }
+        onChange={handleChange}
+        placeholder={`${name[0].toUpperCase()}${name.slice(1).toLowerCase()}`}
       ></textarea>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
+  appearance: none;
   height: 120px;
   width: 100%;
-  padding: 13px 23px;
-  line-height: 24px;
+
   background-color: transparent;
+  display: inline-block;
+  position: relative;
+
+  background-color: transparent;
+  color: white;
+  font-size: 17px;
+
   border: 1px solid #715b3e;
   border-radius: 0;
   outline: 0;
-  user-select: none;
   textarea {
-    font-size: 19px;
+    appearance: none;
+    padding: 1em 1em;
+    font-family: var(--opensans);
+
     width: 100%;
     height: 100%;
-    display: inline-block;
     background-color: transparent;
-    font-family: inherit;
-    color: white;
     border: none;
+    border-radius: 0;
+    outline: 0;
+    color: white;
     line-height: 24px;
-    border-radius: none;
+    font-size: 17px;
+    user-select: none;
     resize: none;
   }
   /* option {
