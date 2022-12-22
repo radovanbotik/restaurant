@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Headline } from "../../components";
+import { Booking, Headline } from "../../components";
 import { ContactForm } from "./ContactForm";
 import { Location } from "./Location";
 import { Address } from "./Address";
+import { useGlobalBooking } from "../../context/BookingContext";
+import { Modal } from "../../components";
 
 const restraurants = [
   {
@@ -41,10 +43,13 @@ const restraurants = [
 ];
 
 export const BookingPage = () => {
+  const { modalState } = useGlobalBooking();
+
   return (
     <Wrapper>
       <div className="control">
         <Location />
+        <Booking />
         <div className="column">
           <div className="contact">
             <Headline tag={"Let us know"} headline={"we are listening"} />
@@ -56,6 +61,7 @@ export const BookingPage = () => {
             ))}
           </div>
         </div>
+        {modalState && <Modal />}
       </div>
     </Wrapper>
   );
@@ -70,8 +76,9 @@ const Wrapper = styled.section`
   .control {
     margin: 0 auto;
     max-width: 1400px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+
     .column {
       display: grid;
       grid-template-columns: 1fr;

@@ -31,7 +31,7 @@ export const BookingForm = () => {
   const { handleSubmit } = useGlobalBooking();
   return (
     <Wrapper onSubmit={handleSubmit}>
-      <div className="control">
+      <div className="controlform">
         <SelectInput options={peopleOptions} type={"people"} />
         <SelectInput options={hourOptions} type={"hours"} />
         <DateInput type={"date"} />
@@ -43,7 +43,7 @@ export const BookingForm = () => {
 };
 
 const Wrapper = styled.form`
-  .control {
+  .controlform {
     width: 100%;
     display: grid;
     gap: var(--vspace-2);

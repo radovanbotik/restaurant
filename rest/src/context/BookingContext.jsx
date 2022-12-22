@@ -17,7 +17,7 @@ const BookingContext = ({ children }) => {
     setUserInput(prev => ({ ...prev, [name]: value }));
   };
 
-  const closeModal = () => {
+  const closeModal = e => {
     setModalState(false);
   };
 

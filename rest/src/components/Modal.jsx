@@ -19,8 +19,13 @@ export const Modal = () => {
 
   console.log(date);
   return (
-    <Wrapper>
-      <div className="modal-body">
+    <Wrapper onClick={closeModal}>
+      <div
+        className="modal-body"
+        onClick={e => {
+          e.stopPropagation();
+        }}
+      >
         <span className="material-symbols-outlined icon" onClick={closeModal}>
           close
         </span>
@@ -54,6 +59,7 @@ const Wrapper = styled.div`
     background-color: var(--blue-main);
     border: 1px solid var(--gold-main);
     padding: 20px;
+
     .icon {
       position: absolute;
       top: 20px;
