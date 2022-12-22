@@ -17,12 +17,12 @@ const Wrapper = styled.div`
   background-color: #0b1315;
 
   .control {
-    width: 420px;
+    /* max-width: 420px; */
     margin: 0 auto;
     padding: 80px 0;
     /* padding-top: 130px; */
     display: grid;
     justify-items: center;
-    gap: 1em;
+    /* gap: 1em; */
   }
 `;

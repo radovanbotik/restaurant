@@ -19,8 +19,11 @@ import { SubmitButton } from "./SubmitButton";
 import { AnchorMoving } from "./AnchorMoving";
 import { ItemCard } from "./ItemCard";
 import { PersonCard } from "./PersonCard";
+import { Address } from "./Address";
+import { Modal } from "./Modal";
 
 export {
+  Address,
   AnchorMoving,
   Booking,
   Button,
@@ -35,6 +38,7 @@ export {
   Menu,
   MenuItem,
   MenuList,
+  Modal,
   Navigation,
   PersonCard,
   Recomendations,

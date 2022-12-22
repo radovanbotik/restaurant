@@ -44,7 +44,8 @@ export const Hero = () => {
     <Wrapper>
       <Slide key={slides[currentSlide].id} bg={slides[currentSlide].img}>
         <div className="headline">
-          <h2>{slides[currentSlide].title}</h2>
+          <h4 className="tag">experience</h4>
+          <h1>{slides[currentSlide].title}</h1>
           <p>{slides[currentSlide].phrase}</p>
           <ButtonMedium text={"view more"} />
         </div>
@@ -76,31 +77,31 @@ const Slide = styled.div`
 
   .headline {
     width: 100%;
-    max-width: 300px;
+    /* max-width: 300px; */
     z-index: 10;
     display: grid;
     justify-items: center;
     align-content: center;
     text-align: center;
-    transform: translateY(-72px);
+    gap: var(--vspace-2);
+    .tag {
+      display: none;
+      font-size: 1.1875em;
+      color: #c9ab81;
+      font-family: var(--miniver);
+      letter-spacing: 0.04em;
+      line-height: 28px;
+    }
 
-    h2 {
-      font-family: var(--metropolis);
-      line-height: 50px;
-      letter-spacing: 12px;
-      font-weight: 300px;
-      font-size: 42px;
-      color: rgb(201, 171, 129);
+    h1 {
+      font-size: 2.375em;
+      font-weight: 300;
       white-space: normal;
       margin-bottom: 16px;
+      line-height: calc(2.375 / var(--space) * var(--vspace-1));
     }
     p {
-      font-family: var(--josefinsans);
-      line-height: 33px;
-      letter-spacing: 0px;
-      font-weight: 300;
-      font-size: 23px;
-      margin-bottom: 32px;
+      max-width: 680px;
     }
   }
   &:after {
@@ -118,5 +119,20 @@ const Slide = styled.div`
   }
   .button {
     justify-self: center;
+  }
+
+  @media (min-width: 768px) {
+    .headline h1 {
+      font-size: 3.9167em;
+      line-height: calc(3.9167 / var(--space) * var(--vspace-1));
+      font-weight: 300;
+    }
+  }
+  @media (min-width: 1000px) {
+    .headline {
+      .tag {
+        display: block;
+      }
+    }
   }
 `;

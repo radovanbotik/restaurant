@@ -74,9 +74,9 @@ export const Testimonials = () => {
             </div>
           </div>
         </div>
-      </div>{" "}
-      <div className="image-control">
-        <img src={takingorders} alt="" />
+        <div className="image-control">
+          <img src={takingorders} alt="" />
+        </div>
       </div>
     </Wrapper>
   );
@@ -84,16 +84,18 @@ export const Testimonials = () => {
 
 const Wrapper = styled.section`
   background-color: #0f1d22;
-
+  padding: 0px 40px;
   .control {
     padding: 80px 0;
-    width: 420px;
     margin: 0 auto;
-    padding-top: 130px;
     display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: var(--vspace-0);
     .testimonial-control {
       display: grid;
-      /* place-content: center; */
+      place-content: center;
+      padding: 20px;
       .vector-quotemark {
         justify-self: center;
         height: 33px;
@@ -104,20 +106,29 @@ const Wrapper = styled.section`
         overflow: hidden;
         position: relative;
         width: 100%;
-        height: 400px;
       }
       .navigation {
         margin: 46px 0 0;
       }
     }
-  }
-  .image-control {
-    /* min-height: 70vh; */
-    height: 600px;
-    img {
+    .image-control {
+      max-height: 600px;
+      /* height: 600px; */
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+  @media (min-width: 1000px) {
+    .control {
+      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(200px, 600px) minmax(150px, 600px);
+      justify-content: space-evenly;
+      padding: 40px;
     }
   }
 `;

@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     font-family: var(--miniver);
     letter-spacing: 0.04em;
     color: #afb8b8;
-    font-size: 22px;
+    /* font-size: 22px; */
     line-height: 39px;
     margin: 36px 0 0;
   }

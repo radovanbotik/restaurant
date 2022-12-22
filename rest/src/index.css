@@ -8,20 +8,19 @@
   src: url(./assets/fonts/Metropolis1920.otf);
 }
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  /* Increase or decrease the number 
+  to change the vertical spacing globally*/
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Base Vertical Spacing */
+  --space: 1.62;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
+  /* Vertical Spacing - multiplier */
+  --vspace: calc(var(--space) * 1rem);
+  --vspace-0: calc(3 * var(--space) * 1rem);
+  --vspace-1: calc(2 * var(--space) * 1rem);
+  --vspace-2: calc(1.5 * var(--space) * 1rem);
+  --vspace-3: calc(0.5 * var(--space) * 1rem);
+
   --badscript: "Bad Script", cursive;
   --josefinsans: "Josefin Sans", sans-serif;
   --miniver: "Miniver", cursive;
@@ -34,6 +33,8 @@
 
   --blue-main: #0f1d22;
   --black-main: #0b1315;
+  --gold-main: #c9ab81;
+  --gold-dark: #715b3e;
 }
 *,
 *::before,
@@ -45,15 +46,6 @@
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
-body {
-  font-family: var(--josefinsans);
-  font-size: 19px;
-  font-weight: 300;
-  line-height: 29px;
-  letter-spacing: 0;
-  text-transform: none;
-  color: white;
-}
 
 h1,
 h2,
@@ -61,14 +53,149 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 14px;
-  line-height: 22px;
+  /* font-size: 14px; */
+  /* line-height: 22px; */
   font-family: var(--quicksand);
   font-weight: 700;
   text-transform: uppercase;
-  /* color: #c9ab81; */
+  color: var(--gold-main);
+  letter-spacing: 0.22em;
 }
 h1,
 h6 {
   letter-spacing: 0.22em;
+}
+
+html {
+  /* font-size: 12px; */
+}
+
+body {
+  /* padding: 0 var(--vspace-3);` */
+
+  font-size: 1.1875em;
+  /* max-width: calc(25 * var(--vspace-0)); */
+  /* background-color: var(--black-main);
+  border-left: 1px solid var(--gold-main);
+  border-right: 1px solid var(--gold-main); */
+  margin: 0 auto;
+  font-family: var(--josefinsans);
+  font-weight: 300;
+  letter-spacing: 0;
+  text-transform: none;
+  color: white;
+}
+
+p {
+  /* margin: var(--vspace) 0; */
+  line-height: var(--vspace);
+}
+
+h1 {
+  /* margin: var(--vspace-1) 0 var(--vspace-1) 0; */
+  line-height: calc(3.9167 / var(--space) * var(--vspace));
+  font-family: var(--metropolis);
+  color: var(--gold-main);
+  text-align: center;
+}
+
+h2 {
+  /* margin: var(--vspace-2) 0 var(--vspace-3) 0; */
+  line-height: 1em;
+}
+
+h3 {
+  /* margin: var(--vspace-1) 0 var(--vspace-3) 0; */
+  line-height: 1em;
+}
+
+h4,
+h5,
+h6 {
+  /* margin: var(--vspace-2) 0 var(--vspace-3) 0; */
+  line-height: var(--vspace);
+  font-family: var(--quicksand);
+}
+
+h1 {
+  font-size: 3.9167em;
+  word-break: break-word;
+}
+
+h2 {
+  font-size: 2.375em;
+  font-size: 1.6em;
+
+  font-weight: lighter;
+  word-break: break-word;
+}
+
+h3 {
+  font-size: 1.7708em;
+  font-weight: normal;
+  text-transform: uppercase;
+  /* letter-spacing: 0.1em; */
+}
+
+blockquote {
+  font-size: 1.1875em;
+  font-style: italic;
+  line-height: calc(1.1875 * var(--vspace));
+  margin: var(--vspace-2) var(--vspace-2);
+}
+
+h4 {
+  font-size: 1.4583em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+h5 {
+  /* font-size: 1.3125em; */
+  font-size: 0.8958rem;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase;
+  /* letter-spacing: 0.15em; */
+}
+
+h6 {
+  font-size: 1.1875em;
+  font-size: 0.8958rem;
+  font-weight: 700;
+  line-height: calc(3.9167 / var(--space) * var(--vspace-3));
+  color: var(--gold-main);
+
+  /* font-style: italic; */
+}
+
+.caption_ts {
+  font-size: 0.9792em;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.endnote_ts {
+  font-size: 0.9792em;
+}
+
+.footnote_ts {
+  /* margin: var(--vspace-0) 0 var(--vspace-2) 0; */
+  font-size: 0.8958em;
+  border-top: 1px solid #ccc;
+  line-height: 2em;
+}
+
+sup {
+  font-size: 0.8958rem;
+  margin: 0.5em;
+  text-transform: none;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 }

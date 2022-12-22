@@ -28,16 +28,26 @@ const Wrapper = styled.section`
   display: grid;
   place-content: center;
   .control {
-    width: 420px;
+    /* width: 420px; */
     margin: 0 auto;
     padding: 80px 0;
     display: grid;
     justify-items: center;
     gap: 1em;
+    .headline {
+      padding: 80px 0;
+    }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      grid-template-columns: 1fr;
       gap: 30px;
+    }
+  }
+  @media (min-width: 1000px) {
+    .control {
+      .gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
   }
 `;

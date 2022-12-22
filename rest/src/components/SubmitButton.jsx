@@ -12,6 +12,7 @@ export const SubmitButton = ({ text, path }) => {
 };
 
 const Wrapper = styled.button`
+  height: 50px;
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -23,6 +24,7 @@ const Wrapper = styled.button`
 
   z-index: 4;
   font-family: var(--opensans);
+
   font-size: 14px;
   font-weight: 300;
   line-height: 2em;

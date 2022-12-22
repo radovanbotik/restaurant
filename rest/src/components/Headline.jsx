@@ -22,7 +22,8 @@ export const Headline = ({ headline, tag }) => {
 };
 
 const Wrapper = styled.div`
-  padding-top: 0px;
+  /* padding: 60px 0; */
+  /* padding-top: 0px; */
   display: grid;
   text-align: center;
   .story-header {
@@ -38,7 +39,7 @@ const Wrapper = styled.div`
       line-height: 28px;
     }
     .title-holder {
-      width: 350px;
+      /* width: 350px; */
       margin: 0 auto;
       margin-bottom: 19px;
       display: grid;
@@ -57,14 +58,14 @@ const Wrapper = styled.div`
       }
       h2 {
         align-self: center;
-        font-size: 31px;
-        line-height: 41px;
+        /* font-size: 31px;
+        line-height: 41px; */
         font-family: var(--quicksand);
         font-weight: 700;
         color: #c9ab81;
         text-transform: uppercase;
         word-wrap: break-word;
-        letter-spacing: 0.22em;
+        /* letter-spacing: 0.22em; */
       }
     }
   }
