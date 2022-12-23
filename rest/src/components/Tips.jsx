@@ -22,7 +22,7 @@ export const Tips = () => {
           <Headline tag={"Our Philosophy"} headline={"our tips"} />
           <ParagraphDescription
             description={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quasipossimus laborum architecto soluta quos. Repudiandae reiciendis suscipit fugit voluptas praesentium perferendis magnam quibusdam quae?"
+              "Immerse yourself in an experience that transcends the ordinary and restores your faith in the power of food."
             }
           />
           <ButtonMoving text={"read more"} />

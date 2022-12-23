@@ -18,7 +18,7 @@ export const Recomendations = () => {
           <Headline headline={"our best specialties"} tag={"Recommendations"} />
           <ParagraphDescription
             description={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quae dolorem doloremque quasi vitae enim eos qui consectetur laudantium."
+              "The tradition continues. A restaurant where nature, craftsmanship, and love come together, inspired by the seasons, our tasting menus offer fresh, local ingredients in unique flavor combinations"
             }
           />
           <ButtonMedium text={"view all"} path={"/selected"} />
