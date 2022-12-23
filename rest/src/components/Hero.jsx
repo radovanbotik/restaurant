@@ -11,14 +11,14 @@ const data = [
     img: mixing,
     title: "the best dishes",
     phrase:
-      "We have proper passion for cooking. Love is the secret ingredient that makes all our meals taste better and magical.",
+      "A unique, theatrical experience where each table is its own foodie experience.",
   },
   {
     id: 2,
     img: pouring2,
     title: "the finest drinks",
     phrase:
-      "From the delicious food to wonderful cocktails, Laurent's offer is guaranteed to satisfy all of your taste buds.",
+      "The good life is waiting for you. Come for a drink, stay for a meal.",
   },
 ];
 
