@@ -1,6 +1,7 @@
 import { Hero } from "./Hero";
 import { Button } from "./Button";
 import { Navigation } from "./Navigation";
+import { NavigationLink } from "./NavigationLink";
 import { Stories } from "./Stories";
 import { Testimonials } from "./Testimonial/Testimonials";
 import { Recomendations } from "./Recomendations";
@@ -21,6 +22,7 @@ import { ItemCard } from "./ItemCard";
 import { PersonCard } from "./PersonCard";
 import { Address } from "./Address";
 import { Modal } from "./Modal";
+import { NavigationLinkButton } from "./NavigationLinkButton";
 
 export {
   Address,
@@ -40,6 +42,8 @@ export {
   MenuList,
   Modal,
   Navigation,
+  NavigationLink,
+  NavigationLinkButton,
   PersonCard,
   Recomendations,
   Stories,

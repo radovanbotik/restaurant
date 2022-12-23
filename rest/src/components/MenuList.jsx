@@ -6,9 +6,8 @@ export const MenuList = ({ data }) => {
   return (
     <Wrapper className="menu">
       <div className="control">
-        {data.map(entry => (
-          <MenuItem key={entry.id} {...entry} />
-        ))}
+        {data &&
+          data.map((entry, index) => <MenuItem key={index} {...entry} />)}
       </div>
     </Wrapper>
   );

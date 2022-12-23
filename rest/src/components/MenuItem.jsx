@@ -2,13 +2,16 @@ import React from "react";
 import { formatPrice } from "../utility/formatPrice";
 import styled from "styled-components";
 
-export const MenuItem = ({ id, dish, price, ingredients }) => {
+export const MenuItem = ({ name, price, description }) => {
+  const desc = description.toLowerCase();
+  const capital = `${desc.charAt(0).toUpperCase()}${desc.slice(1)}`;
+
   return (
     <Wrapper>
-      <h6 className="item-name">{dish}</h6>
+      <h6 className="item-name">{name}</h6>
       <h6 className="item-price">{formatPrice(price / 100)}</h6>
       <div className="line"></div>
-      <p className="item-ingredients">{ingredients}</p>
+      <p className="item-ingredients">{capital}</p>
     </Wrapper>
   );
 };

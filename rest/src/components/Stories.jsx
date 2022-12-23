@@ -18,7 +18,7 @@ export const Stories = ({ setRef }) => {
           <Headline headline={"about us"} tag={"Our Story"} />
           <ParagraphDescription
             description={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quae dolorem doloremque quasi vitae enim eos qui consectetur laudantium."
+              "Beginning as a seasonal food truck in 2009, The Gourmand Lounge has been named best rustic restaurant—as well as drink parlor in the country, along with numerous other accolades. Now the company has multiple locations in Slovakia & Hungary."
             }
           />
         </div>

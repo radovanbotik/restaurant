@@ -16,7 +16,7 @@ export const GridLines = () => {
 
 const Wrapper = styled.div`
   display: none;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

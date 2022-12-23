@@ -9,7 +9,7 @@ import { GridLines } from "./GridLines";
 export const Recomendations = () => {
   return (
     <Wrapper>
-      <GridLines />
+      {/* <GridLines /> */}
       <div className="control">
         <div className="story-image">
           <img src={decorating} alt="" />
