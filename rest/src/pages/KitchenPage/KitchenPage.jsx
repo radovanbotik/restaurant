@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { personel } from "../../utility/personelDummy";
 import { PersonCard, Headline } from "../../components";
 import { Outlet } from "react-router-dom";
 import { GridLines } from "../../components/GridLines";
+import { useGlobalMenuAndStaff } from "../../context/MenuAndStaffContext";
 
 export const KitchenPage = () => {
-  const [chefs, setChefs] = useState(personel.chefs);
-  const [waiting, setWaiting] = useState(personel.waiters);
-  const [reception, setReception] = useState(personel.reception);
+  const { staffData } = useGlobalMenuAndStaff();
+  console.log(staffData);
 
   return (
     <Wrapper>
@@ -19,25 +18,28 @@ export const KitchenPage = () => {
           <div className="team">
             <h6>Reception:</h6>
             <div className="gallery">
-              {reception.map(entry => (
-                <PersonCard key={entry.id} {...entry} type={"product"} />
-              ))}
+              {staffData.reception &&
+                staffData.reception.map(entry => (
+                  <PersonCard key={entry.id} {...entry} type={"product"} />
+                ))}
             </div>
           </div>
           <div className="team">
             <h6>waiters:</h6>
             <div className="gallery">
-              {waiting.map(entry => (
-                <PersonCard key={entry.id} {...entry} type={"product"} />
-              ))}
+              {staffData.waiting &&
+                staffData.waiting.map(entry => (
+                  <PersonCard key={entry.id} {...entry} type={"product"} />
+                ))}
             </div>
           </div>
           <div className="team">
             <h6>chefs:</h6>
             <div className="gallery">
-              {chefs.map(entry => (
-                <PersonCard key={entry.id} {...entry} type={"product"} />
-              ))}
+              {staffData.chefs &&
+                staffData.chefs.map(entry => (
+                  <PersonCard key={entry.id} {...entry} type={"product"} />
+                ))}
             </div>
           </div>
         </div>

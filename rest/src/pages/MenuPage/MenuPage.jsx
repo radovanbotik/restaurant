@@ -5,10 +5,10 @@ import { MenuPageSpacerImage } from "./MenuPageSpacerImage";
 import rolling from "../../assets/images/rolling.jpg";
 import dough from "../../assets/images/dough.jpg";
 import pasta from "../../assets/images/pasta.jpg";
-
-import { appetizers } from "../../utility/Appetizers";
+import { useGlobalMenuAndStaff } from "../../context/MenuAndStaffContext";
 
 export const MenuPage = () => {
+  const { menuData } = useGlobalMenuAndStaff();
   return (
     <Wrapper>
       <div className="hero">
@@ -16,19 +16,19 @@ export const MenuPage = () => {
         <MenuPageSpacerImage image={rolling} />
       </div>
       <MenuPageSection
-        data={appetizers}
+        data={menuData.appetizers}
         tag={"Start slow"}
         headline={"appetizers"}
       />
       <MenuPageSpacerImage image={dough} />
       <MenuPageSection
-        data={appetizers}
+        data={menuData.maincourses}
         tag={"Tickle your senses"}
         headline={"main courses"}
       />
       <MenuPageSpacerImage image={pasta} />
       <MenuPageSection
-        data={appetizers}
+        data={menuData.desserts}
         tag={"Treat yourself"}
         headline={"desserts"}
       />

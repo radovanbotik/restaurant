@@ -2,10 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { AnchorMoving } from "./AnchorMoving";
 
-export const PersonCard = ({ id, name, occupation, contact, image }) => {
+export const PersonCard = ({ id, name, role, contact, image }) => {
+  console.log(image);
   return (
-    <Wrapper className="card" bg={image}>
+    <Wrapper className="card">
       <div className="inner">
+        <div className="picture">
+          <img src={image} alt="" className="picture-direct" />
+        </div>
         <div className="details">
           <h1 className="person">{name}</h1>
           <div className="contact">
@@ -18,13 +22,14 @@ export const PersonCard = ({ id, name, occupation, contact, image }) => {
       </div>
       <div className="details-wrap">
         <h5 className="footnote_ts">{name}</h5>
-        <p>{occupation}</p>
+        <p>{role}</p>
       </div>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
+  height: 200px;
   width: 100%;
   gap: 20px;
   text-align: center;
@@ -36,7 +41,25 @@ const Wrapper = styled.div`
     position: relative;
 
     cursor: pointer;
-    :before {
+    .picture {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      /* background-size: cover;
+      background-position: top; */
+      transition: 450ms ease-in-out;
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: 0% 15%;
+      }
+    }
+    /* :before {
       content: "";
       position: absolute;
       width: 100%;
@@ -45,11 +68,13 @@ const Wrapper = styled.div`
       left: 0;
       background-size: cover;
       background-position: top;
-      background-image: url(${props => props.bg});
       transition: 450ms ease-in-out;
-    }
+    } */
     &:hover {
-      &:before {
+      /* &:before {
+        filter: blur(1px);
+      } */
+      .picture-direct {
         filter: blur(1px);
       }
       .details {

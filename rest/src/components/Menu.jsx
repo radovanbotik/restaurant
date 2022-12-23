@@ -3,14 +3,16 @@ import styled from "styled-components";
 import { Headline } from "./Headline";
 import { ButtonMedium } from "./ButtonMedium";
 import { MenuList } from "./MenuList";
-import { data } from "../utility/MenuDummy";
+import { useGlobalMenuAndStaff } from "../context/MenuAndStaffContext";
 
 export const Menu = () => {
+  const { menuData } = useGlobalMenuAndStaff();
+
   return (
     <Wrapper>
       <div className="control">
-        <Headline headline={"from our menu"} tag={"Special selection"} />
-        <MenuList data={data} />
+        <Headline headline={"from our menu"} tag={"Desserts selection"} />
+        <MenuList data={menuData.desserts} />
         <ButtonMedium text={"view all"} path={"/menu"} />
       </div>
     </Wrapper>

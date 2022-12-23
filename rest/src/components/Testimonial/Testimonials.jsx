@@ -9,23 +9,23 @@ import { IndexButton } from "./IndexButton";
 const data = [
   {
     id: 1,
-    name: "Bruce Wayne",
-    message: "The night is darkest just before the dawn.",
-    occupation: "vigilante",
+    name: "Maximilián Suchý",
+    message:
+      "I am a foodie and I'm always on the lookout for the best restaurants and food around town. This place is a must visit!",
+    occupation: "customer",
   },
   {
     id: 2,
-    name: "Clark Kent",
+    name: "Király Alex",
     message:
-      "There is a right and a wrong in the universe and the distinction should not be hard to make.",
-    occupation: "hero",
+      "It's really wonderful. I love Grourman Lounge. Your restaurant is truly upstanding and is behind its message 100%. Definitely worth the money.",
+    occupation: "customer",
   },
   {
     id: 3,
-    name: "Eric Cartman",
-    message:
-      "Kenny's family is so poor that yesterday they had to put their cardboard box up for a second mortgage.",
-    occupation: "child",
+    name: "Stanislava Ondrejová",
+    message: "You won't regret it. We're loving it.",
+    occupation: "customer",
   },
 ];
 

@@ -47,7 +47,7 @@ export const Hero = () => {
           <h4 className="tag">experience</h4>
           <h1>{slides[currentSlide].title}</h1>
           <p>{slides[currentSlide].phrase}</p>
-          <ButtonMedium text={"view more"} />
+          <ButtonMedium text={"view more"} path={"/menu"} />
         </div>
       </Slide>
     </Wrapper>
